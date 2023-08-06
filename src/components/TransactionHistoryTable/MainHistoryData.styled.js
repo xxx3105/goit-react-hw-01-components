@@ -6,8 +6,8 @@ width: 600px;
 height: 400px;
 background-color: white;
 position: absolute;
-bottom: -1800px;
-left: 280px;
+bottom: -2000px;
+left: 380px;
 margin-bottom: 200px;
 
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
