@@ -1,4 +1,6 @@
 import { ImgUser, OtherTextStyle, NameFontStyle, DataContainer ,StatsContainer ,StatsItem , StatsItemsFont, StatsNameStyle } from "./ProfileCard.styled";
+import PropTypes from 'prop-types';
+import React from 'react';
 
 export const ProfileCard = ({ username, avatar, tag, location,followers, views, likes }) => { 
     return <div> 
@@ -26,3 +28,12 @@ export const ProfileCard = ({ username, avatar, tag, location,followers, views, 
  };
  
  
+ProfileCard.propTypes = {
+  username: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
+};

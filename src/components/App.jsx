@@ -1,22 +1,23 @@
-import { GlobalStyle } from "./GlobalStyle";
+import React from 'react';
+
 import profileItems from './Databases/user.json';
-import { ProfileCard } from "./ProfilCard/ProfileCard";
+import { ProfileCard } from "./ProfileCard/ProfileCard";
 import { Layout } from "./Layout";
-import { ObjectsContainer } from "./ObjectsContainer";
+import { Container } from "../stlyles/GlobalStyle";
 
 import uploadStats from './Databases/data.json';
-import { Statistics } from "./UploadStat/Statistics";
+import { Statistics } from "./Statistics/Statistics";
 
 import friendsData from './Databases/friends.json'
-import { FriendList } from "./FriendList/FriendsListContainer";
+import { FriendListContainer } from "./FriendListContainer/FriendsListContainer";
 
 import transactions from './Databases/transactions.json'
-import { TransactionHistory } from "./TransactionHistoryTable/MainHistoryData";
+import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 
 export const App = () => {
   return (
     <Layout>
-      <ObjectsContainer>
+      <Container>
       <ProfileCard
       username={profileItems.username}
       avatar={profileItems.avatar}
@@ -26,16 +27,10 @@ export const App = () => {
       views={profileItems.stats.views}
       likes={profileItems.stats.likes}
       />
-      </ObjectsContainer>
-
+      </Container>
       <Statistics title="Upload stats" stats={uploadStats} />
-      
-
-      <FriendList friends={friendsData}/>
-
+      <FriendListContainer friends={friendsData}/>
       <TransactionHistory items={transactions} />; 
-
-      <GlobalStyle />
     </Layout>
   );
 };

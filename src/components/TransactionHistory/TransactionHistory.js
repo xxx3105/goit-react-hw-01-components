@@ -1,4 +1,4 @@
-import { DataTransactionText, MainTransactionContainer, TableHeader, TableOperationHistory, TableStyleHead, TextTable } from "./MainHistoryData.styled";
+import { DataTransactionText, MainTransactionContainer, TableHeader, TableOperationHistory, TableStyleHead, TextTable } from "./TransactionHistory.styled";
 
  
 export const TransactionHistory = ({ items }) => {
