@@ -39,10 +39,10 @@ padding: 0;
 `;
 
 export const Container = styled.div`
-width: 270px;
-height: 445px;
-background-color: #C4C4C4;
-margin: 0 auto;
-margin-top: 80px;
-margin-bottom: 80px;
+  width: 270px;
+  height: 445px;
+  background-color: #c4c4c4;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
 `;
